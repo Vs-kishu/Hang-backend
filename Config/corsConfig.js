@@ -1,4 +1,9 @@
-var whitelist = ["http://localhost:3000", "http://192.168.43.159:3000"];
+var whitelist = [
+  "http://localhost:3000",
+  "http://192.168.43.159:3000",
+  "https://hang-friends.netlify.app/",
+  "https://hang-friends.netlify.app",
+];
 var corsConfig = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1 || origin) {
